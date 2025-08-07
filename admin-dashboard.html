@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TechConf 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechConf <span>2025</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Home <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" class="nav-link" id="home1">Home 1</a></li>
+                        <li><a href="index2.html" class="nav-link" id="home2">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="event-details.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Dashboard <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                <li class="nav-item"><a href="admin-dashboard.html" class="nav-link">Admin</a></li>
+                <li class="nav-item"><a href="user-dashboard.html" class="nav-link">User</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="rtl-toggle" id="rtlToggle">
+                        <i class="fas fa-language"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-main">
+        <div class="dashboard-container">
+            <aside class="dashboard-sidebar">
+                <div class="sidebar-header">
+                    <h3><i class="fas fa-cog"></i> Admin Panel</h3>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#overview" class="sidebar-link active">
+                        <i class="fas fa-chart-line"></i>
+                        Overview
+                    </a>
+                    <a href="#attendees" class="sidebar-link">
+                        <i class="fas fa-users"></i>
+                        Attendees
+                    </a>
+                    <a href="#speakers" class="sidebar-link">
+                        <i class="fas fa-microphone"></i>
+                        Speakers
+                    </a>
+                    <a href="#sessions" class="sidebar-link">
+                        <i class="fas fa-calendar-alt"></i>
+                        Sessions
+                    </a>
+                    <a href="#analytics" class="sidebar-link">
+                        <i class="fas fa-analytics"></i>
+                        Analytics
+                    </a>
+                    <a href="#settings" class="sidebar-link">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </nav>
+                <div class="sidebar-footer">
+                    <a href="login.html" class="logout-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </aside>
+
+            <div class="dashboard-content">
+                <div class="dashboard-header">
+                    <div class="header-info">
+                        <h1>Admin Dashboard</h1>
+                        <p>Welcome back, Administrator</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Export Data
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Add New
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon primary">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>4,257</h3>
+                            <p>Total Registrations</p>
+                            <span class="stat-change positive">+12% from last month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon success">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>$2.8M</h3>
+                            <p>Total Revenue</p>
+                            <span class="stat-change positive">+8% from target</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon warning">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>98</h3>
+                            <p>Confirmed Speakers</p>
+                            <span class="stat-change positive">2 pending confirmations</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon error">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>52</h3>
+                            <p>Total Sessions</p>
+                            <span class="stat-change neutral">Schedule finalized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Registrations</h3>
+                            <button class="btn btn-sm btn-outline">View All</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="table-container">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Ticket Type</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sarah Johnson</td>
+                                            <td>sarah.j@email.com</td>
+                                            <td>Premium</td>
+                                            <td>Jan 15, 2025</td>
+                                            <td><span class="status success">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Chen</td>
+                                            <td>m.chen@company.com</td>
+                                            <td>General</td>
+                                            <td>Jan 14, 2025</td>
+                                            <td><span class="status success">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Emma Wilson</td>
+                                            <td>emma.w@startup.io</td>
+                                            <td>Student</td>
+                                            <td>Jan 14, 2025</td>
+                                            <td><span class="status warning">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>David Rodriguez</td>
+                                            <td>d.rodriguez@tech.com</td>
+                                            <td>Premium</td>
+                                            <td>Jan 13, 2025</td>
+                                            <td><span class="status success">Confirmed</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Revenue Overview</h3>
+                            <select class="form-select">
+                                <option>Last 30 days</option>
+                                <option>Last 3 months</option>
+                                <option>Last year</option>
+                            </select>
+                        </div>
+                        <div class="card-content">
+                            <div class="chart-placeholder">
+                                <div class="chart-bars">
+                                    <div class="chart-bar" style="height: 60%;"></div>
+                                    <div class="chart-bar" style="height: 80%;"></div>
+                                    <div class="chart-bar" style="height: 45%;"></div>
+                                    <div class="chart-bar" style="height: 90%;"></div>
+                                    <div class="chart-bar" style="height: 70%;"></div>
+                                    <div class="chart-bar" style="height: 95%;"></div>
+                                    <div class="chart-bar" style="height: 85%;"></div>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>Week 1</span>
+                                    <span>Week 2</span>
+                                    <span>Week 3</span>
+                                    <span>Week 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="quick-actions">
+                                <button class="quick-action-btn">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span>Add Speaker</span>
+                                </button>
+                                <button class="quick-action-btn">
+                                    <i class="fas fa-calendar-plus"></i>
+                                    <span>Create Session</span>
+                                </button>
+                                <button class="quick-action-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Send Newsletter</span>
+                                </button>
+                                <button class="quick-action-btn">
+                                    <i class="fas fa-file-export"></i>
+                                    <span>Export Reports</span>
+                                </button>
+                                <button class="quick-action-btn">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Event Settings</span>
+                                </button>
+                                <button class="quick-action-btn">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span>Send Announcement</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>System Status</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="system-status">
+                                <div class="status-item">
+                                    <div class="status-indicator success"></div>
+                                    <div class="status-info">
+                                        <h4>Registration System</h4>
+                                        <p>Operational</p>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <div class="status-indicator success"></div>
+                                    <div class="status-info">
+                                        <h4>Payment Processing</h4>
+                                        <p>Operational</p>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <div class="status-indicator warning"></div>
+                                    <div class="status-info">
+                                        <h4>Email Service</h4>
+                                        <p>Degraded Performance</p>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <div class="status-indicator success"></div>
+                                    <div class="status-info">
+                                        <h4>Mobile App</h4>
+                                        <p>Operational</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

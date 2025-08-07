@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechConf 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechConf <span>2025</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Home <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" class="nav-link" id="home1">Home 1</a></li>
+                        <li><a href="index2.html" class="nav-link" id="home2">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="event-details.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Dashboard <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                <li class="nav-item"><a href="admin-dashboard.html" class="nav-link">Admin</a></li>
+                <li class="nav-item"><a href="user-dashboard.html" class="nav-link">User</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="rtl-toggle" id="rtlToggle">
+                        <i class="fas fa-language"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Register for TechConf 2025</h1>
+                <p>Secure your spot at the premier technology conference</p>
+            </div>
+        </section>
+
+        <section class="registration">
+            <div class="container">
+                <div class="registration-content">
+                    <div class="ticket-selection">
+                        <h2>Choose Your Pass</h2>
+                        <div class="ticket-options">
+                            <div class="ticket-option" data-ticket="general">
+                                <div class="ticket-header">
+                                    <h3>General Admission</h3>
+                                    <div class="ticket-price">
+                                        <span class="price">$499</span>
+                                        <span class="original-price">$599</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Access to all sessions</li>
+                                        <li><i class="fas fa-check"></i> Exhibition hall access</li>
+                                        <li><i class="fas fa-check"></i> Welcome reception</li>
+                                        <li><i class="fas fa-check"></i> Conference materials</li>
+                                        <li><i class="fas fa-check"></i> Lunch included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ticket-option featured" data-ticket="premium">
+                                <div class="ticket-badge">Most Popular</div>
+                                <div class="ticket-header">
+                                    <h3>Premium Pass</h3>
+                                    <div class="ticket-price">
+                                        <span class="price">$799</span>
+                                        <span class="original-price">$999</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> All General Admission benefits</li>
+                                        <li><i class="fas fa-check"></i> VIP networking events</li>
+                                        <li><i class="fas fa-check"></i> Premium seating</li>
+                                        <li><i class="fas fa-check"></i> Speaker meet & greets</li>
+                                        <li><i class="fas fa-check"></i> Exclusive workshops</li>
+                                        <li><i class="fas fa-check"></i> Conference swag bag</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ticket-option" data-ticket="student">
+                                <div class="ticket-header">
+                                    <h3>Student Pass</h3>
+                                    <div class="ticket-price">
+                                        <span class="price">$199</span>
+                                        <span class="original-price">$299</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Access to all sessions</li>
+                                        <li><i class="fas fa-check"></i> Exhibition hall access</li>
+                                        <li><i class="fas fa-check"></i> Student networking events</li>
+                                        <li><i class="fas fa-check"></i> Digital materials only</li>
+                                        <li><i class="fas fa-info-circle"></i> Valid student ID required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="registration-form-section">
+                        <form class="registration-form" id="registrationForm">
+                            <div class="form-section">
+                                <h3>Personal Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jobTitle">Job Title</label>
+                                        <input type="text" id="jobTitle" name="jobTitle">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Company Information</h3>
+                                <div class="form-group">
+                                    <label for="company">Company/Organization *</label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="industry">Industry</label>
+                                        <select id="industry" name="industry">
+                                            <option value="">Select Industry</option>
+                                            <option value="technology">Technology</option>
+                                            <option value="finance">Finance</option>
+                                            <option value="healthcare">Healthcare</option>
+                                            <option value="education">Education</option>
+                                            <option value="retail">Retail</option>
+                                            <option value="manufacturing">Manufacturing</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="companySize">Company Size</label>
+                                        <select id="companySize" name="companySize">
+                                            <option value="">Select Size</option>
+                                            <option value="1-10">1-10 employees</option>
+                                            <option value="11-50">11-50 employees</option>
+                                            <option value="51-200">51-200 employees</option>
+                                            <option value="201-1000">201-1000 employees</option>
+                                            <option value="1000+">1000+ employees</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Registration Details</h3>
+                                <div class="form-group">
+                                    <label for="ticketType">Selected Ticket</label>
+                                    <input type="text" id="ticketType" name="ticketType" value="Premium Pass - $799" readonly>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="interests">Areas of Interest (Select all that apply)</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="ai">
+                                            <span class="checkmark"></span>
+                                            Artificial Intelligence & Machine Learning
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="blockchain">
+                                            <span class="checkmark"></span>
+                                            Blockchain & Web3
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="cybersecurity">
+                                            <span class="checkmark"></span>
+                                            Cybersecurity
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="cloud">
+                                            <span class="checkmark"></span>
+                                            Cloud Computing
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="mobile">
+                                            <span class="checkmark"></span>
+                                            Mobile Development
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dietaryRestrictions">Dietary Restrictions</label>
+                                    <textarea id="dietaryRestrictions" name="dietaryRestrictions" rows="3" placeholder="Please let us know about any dietary restrictions or allergies"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Terms & Conditions</h3>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="terms" name="terms" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a> *
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        Subscribe to our newsletter for conference updates
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="marketing" name="marketing">
+                                        <span class="checkmark"></span>
+                                        I consent to receive marketing communications
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <div class="total-price">
+                                    <span>Total: <strong id="totalPrice">$799</strong></span>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-credit-card"></i>
+                                    Proceed to Payment
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechConf 2025</h3>
+                    <p>The premier technology conference bringing together innovators, leaders, and visionaries from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="event-details.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="404.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechConf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

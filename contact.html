@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechConf 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechConf <span>2025</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Home <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" class="nav-link" id="home1">Home 1</a></li>
+                        <li><a href="index2.html" class="nav-link" id="home2">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="event-details.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Dashboard <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                <li class="nav-item"><a href="admin-dashboard.html" class="nav-link">Admin</a></li>
+                <li class="nav-item"><a href="user-dashboard.html" class="nav-link">User</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="rtl-toggle" id="rtlToggle">
+                        <i class="fas fa-language"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with the TechConf 2025 team</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>Have questions about TechConf 2025? We're here to help! Reach out to us using any of the methods below.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>info@techconf2025.com</p>
+                                    <p>support@techconf2025.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                    <p>Mon-Fri, 9AM-6PM PST</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Address</h3>
+                                    <p>Moscone Center</p>
+                                    <p>747 Howard Street<br>San Francisco, CA 94103</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Event Dates</h3>
+                                    <p>March 15-17, 2025</p>
+                                    <p>8:00 AM - 6:00 PM Daily</p>
+                                </div>
+                            </div>
+                        </div>
+
+                         
+                    </div>
+
+                    <div class="contact-form-section">
+                        <form class="contact-form" id="contactForm">
+                            <h2>Send us a Message</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="registration">Registration Questions</option>
+                                    <option value="speakers">Speaker Inquiries</option>
+                                    <option value="sponsorship">Sponsorship Opportunities</option>
+                                    <option value="media">Media & Press</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates about TechConf 2025
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How do I register for the conference?</h3>
+                        <p>You can register online through our registration page. Early bird pricing is available until February 1st, 2025.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a dress code?</h3>
+                        <p>Business casual attire is recommended. The venue is climate-controlled for your comfort.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Will sessions be recorded?</h3>
+                        <p>Yes, most sessions will be recorded and made available to registered attendees after the conference.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What is the refund policy?</h3>
+                        <p>Full refunds are available up to 30 days before the event. 50% refunds are available up to 14 days before.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are meals included?</h3>
+                        <p>Lunch and coffee breaks are included for all ticket types. Premium passes also include the welcome reception.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is parking available?</h3>
+                        <p>Yes, parking is available at the Moscone Center. We also recommend public transportation as the venue is easily accessible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechConf 2025</h3>
+                    <p>The premier technology conference bringing together innovators, leaders, and visionaries from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="event-details.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="404.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechConf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - TechConf 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechConf <span>2025</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Home <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" class="nav-link" id="home1">Home 1</a></li>
+                        <li><a href="index2.html" class="nav-link" id="home2">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="event-details.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Dashboard <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                <li class="nav-item"><a href="admin-dashboard.html" class="nav-link">Admin</a></li>
+                <li class="nav-item"><a href="user-dashboard.html" class="nav-link">User</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="rtl-toggle" id="rtlToggle">
+                        <i class="fas fa-language"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Conference Schedule</h1>
+                <p>Three days packed with innovation, learning, and networking</p>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="container">
+                <div class="schedule-nav">
+                    <button class="schedule-day-btn active" data-day="day1">
+                        <span class="day-number">Day 1</span>
+                        <span class="day-date">March 15</span>
+                    </button>
+                    <button class="schedule-day-btn" data-day="day2">
+                        <span class="day-number">Day 2</span>
+                        <span class="day-date">March 16</span>
+                    </button>
+                    <button class="schedule-day-btn" data-day="day3">
+                        <span class="day-number">Day 3</span>
+                        <span class="day-date">March 17</span>
+                    </button>
+                </div>
+
+                <div class="schedule-content">
+                    <div class="schedule-day active" id="day1">
+                        <h2>Day 1 - Opening & AI Focus</h2>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">08:00 - 09:00</div>
+                                <div class="schedule-details">
+                                    <h3>Registration & Breakfast</h3>
+                                    <p>Welcome coffee and networking</p>
+                                    <span class="schedule-location">Main Lobby</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item keynote">
+                                <div class="schedule-time">09:00 - 10:00</div>
+                                <div class="schedule-details">
+                                    <h3>Opening Keynote: The Future of AI</h3>
+                                    <p>Sarah Chen, CEO of AI Innovations</p>
+                                    <span class="schedule-location">Main Auditorium</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:00 - 10:30</div>
+                                <div class="schedule-details">
+                                    <h3>Coffee Break & Networking</h3>
+                                    <p>Connect with fellow attendees</p>
+                                    <span class="schedule-location">Exhibition Hall</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:30 - 11:30</div>
+                                <div class="schedule-details">
+                                    <h3>Machine Learning in Production</h3>
+                                    <p>Best practices for deploying ML models</p>
+                                    <span class="schedule-location">Room A</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">11:30 - 12:30</div>
+                                <div class="schedule-details">
+                                    <h3>Computer Vision Applications</h3>
+                                    <p>Real-world CV implementations</p>
+                                    <span class="schedule-location">Room B</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">12:30 - 13:30</div>
+                                <div class="schedule-details">
+                                    <h3>Lunch & Networking</h3>
+                                    <p>Enjoy lunch with fellow attendees</p>
+                                    <span class="schedule-location">Dining Hall</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item workshop">
+                                <div class="schedule-time">13:30 - 15:00</div>
+                                <div class="schedule-details">
+                                    <h3>Hands-on AI Workshop</h3>
+                                    <p>Build your first neural network</p>
+                                    <span class="schedule-location">Workshop Room 1</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">15:00 - 15:30</div>
+                                <div class="schedule-details">
+                                    <h3>Afternoon Break</h3>
+                                    <p>Refreshments and networking</p>
+                                    <span class="schedule-location">Exhibition Hall</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">15:30 - 16:30</div>
+                                <div class="schedule-details">
+                                    <h3>Panel: Ethics in AI</h3>
+                                    <p>Discussion on responsible AI development</p>
+                                    <span class="schedule-location">Main Auditorium</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">18:00 - 20:00</div>
+                                <div class="schedule-details">
+                                    <h3>Welcome Reception</h3>
+                                    <p>Cocktails and networking</p>
+                                    <span class="schedule-location">Rooftop Terrace</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day" id="day2">
+                        <h2>Day 2 - Blockchain & Security</h2>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">08:00 - 09:00</div>
+                                <div class="schedule-details">
+                                    <h3>Morning Coffee</h3>
+                                    <p>Start your day with networking</p>
+                                    <span class="schedule-location">Main Lobby</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item keynote">
+                                <div class="schedule-time">09:00 - 10:00</div>
+                                <div class="schedule-details">
+                                    <h3>Keynote: Decentralized Future</h3>
+                                    <p>Elena Rodriguez, Blockchain Expert</p>
+                                    <span class="schedule-location">Main Auditorium</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:30 - 11:30</div>
+                                <div class="schedule-details">
+                                    <h3>Smart Contracts Deep Dive</h3>
+                                    <p>Building secure smart contracts</p>
+                                    <span class="schedule-location">Room A</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">11:30 - 12:30</div>
+                                <div class="schedule-details">
+                                    <h3>Zero Trust Security</h3>
+                                    <p>Modern cybersecurity strategies</p>
+                                    <span class="schedule-location">Room B</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item workshop">
+                                <div class="schedule-time">13:30 - 15:00</div>
+                                <div class="schedule-details">
+                                    <h3>DeFi Development Workshop</h3>
+                                    <p>Build decentralized applications</p>
+                                    <span class="schedule-location">Workshop Room 2</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">15:30 - 16:30</div>
+                                <div class="schedule-details">
+                                    <h3>Startup Pitch Competition</h3>
+                                    <p>Emerging blockchain startups</p>
+                                    <span class="schedule-location">Main Auditorium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day" id="day3">
+                        <h2>Day 3 - Cloud & Future Tech</h2>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item keynote">
+                                <div class="schedule-time">09:00 - 10:00</div>
+                                <div class="schedule-details">
+                                    <h3>Keynote: Scalable Cloud Architecture</h3>
+                                    <p>Marcus Johnson, CTO of CloudTech</p>
+                                    <span class="schedule-location">Main Auditorium</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:30 - 11:30</div>
+                                <div class="schedule-details">
+                                    <h3>Kubernetes at Scale</h3>
+                                    <p>Managing enterprise containers</p>
+                                    <span class="schedule-location">Room A</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">11:30 - 12:30</div>
+                                <div class="schedule-details">
+                                    <h3>Edge Computing Revolution</h3>
+                                    <p>Processing at the network edge</p>
+                                    <span class="schedule-location">Room B</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">13:30 - 14:30</div>
+                                <div class="schedule-details">
+                                    <h3>Innovation Showcase</h3>
+                                    <p>Latest tech innovations and demos</p>
+                                    <span class="schedule-location">Exhibition Hall</span>
+                                </div>
+                            </div>
+                            <div class="schedule-item keynote">
+                                <div class="schedule-time">15:00 - 16:00</div>
+                                <div class="schedule-details">
+                                    <h3>Closing Keynote: What's Next?</h3>
+                                    <p>The future of technology</p>
+                                    <span class="schedule-location">Main Auditorium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechConf 2025</h3>
+                    <p>The premier technology conference bringing together innovators, leaders, and visionaries from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="event-details.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="404.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechConf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>
