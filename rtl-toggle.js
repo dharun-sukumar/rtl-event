@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 [dir="rtl"] .nav-menu {
-                    flex-direction: row-reverse;
+                    flex-direction: column;
                 }
                 
                 [dir="rtl"] .home-switcher {
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 [dir="rtl"] .dashboard-container {
-                    flex-direction: row-reverse;
+                    flex-direction: column;
                 }
                 
                 [dir="rtl"] .dashboard-sidebar {
@@ -153,10 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     flex-direction: row-reverse;
                 }
                 
-                [dir="rtl"] .header-actions,
-                [dir="rtl"] .card-header {
-                    flex-direction: row-reverse;
-                }
                 
                 [dir="rtl"] .form-row {
                     direction: rtl;

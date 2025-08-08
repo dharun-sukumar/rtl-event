@@ -181,7 +181,7 @@
 
 /* RTL dropdown toggle icon */
 [dir="rtl"] .dropdown-toggle {
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 /* Additional RTL fixes for mobile */
