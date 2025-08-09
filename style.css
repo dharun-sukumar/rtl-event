@@ -153,7 +153,7 @@
 }
 
 [dir="rtl"] .nav-menu {
-    flex-direction: column;
+    flex-direction: row;
 }
 
 [dir="rtl"] .hero-stats {
@@ -189,8 +189,13 @@
     [dir="rtl"] .nav-menu {
         direction: rtl;
         text-align: right;
+        flex-direction: column;
     }
     
+    [dir="rtl"] .nav-menu {
+        flex-direction: column !important;
+    }
+
     [dir="rtl"] .nav-item {
         text-align: right;
     }

@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 [dir="rtl"] .nav-menu {
-                    flex-direction: column;
+                    flex-direction: row;
                 }
                 
                 [dir="rtl"] .home-switcher {
