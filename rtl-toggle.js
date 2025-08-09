@@ -140,9 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     flex-direction: row-reverse;
                 }
                 
-                [dir="rtl"] .dashboard-container {
-                    flex-direction: column;
-                }
                 
                 [dir="rtl"] .dashboard-sidebar {
                     border-right: none;
