@@ -175,13 +175,20 @@
 /* RTL nav container alignment */
 [dir="rtl"] .nav-container {
     direction: rtl;
-            padding: 0 var(--spacing-4);
+    padding: 0 var(--spacing-4);
+}
 
+[dir="rtl"] .contact-method {
+    flex-direction: row;
 }
 
 /* RTL dropdown toggle icon */
 [dir="rtl"] .dropdown-toggle {
-    flex-direction: column;
+    /* flex-direction: column; */
+}
+
+[dir="rtl"] .social-links {
+    flex-direction: row;
 }
 
 /* Additional RTL fixes for mobile */
@@ -1461,7 +1468,6 @@ p {
 }
 
 .form-group label {
-    display: block;
     margin-bottom: var(--spacing-2);
     font-weight: 600;
     color: var(--neutral-700);
