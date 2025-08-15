@@ -39,25 +39,28 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 document.body.style.transition = '';
             }, 300);
+
+            // Close navbar on mobile after RTL toggle
+            const navMenu = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            if (navMenu && hamburger && window.innerWidth <= 768) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
         });
     }
     
     function updateToggleButton(isRTL) {
         if (rtlToggle) {
-            const icon = rtlToggle.querySelector('i');
-            const text = rtlToggle.querySelector('i').nextSibling;
-            
             if (isRTL) {
                 rtlToggle.style.background = 'var(--primary-500)';
                 rtlToggle.style.color = 'white';
-                icon.className = 'fas fa-language';
-                rtlToggle.innerHTML = '<i class="fas fa-language"></i> RTL';
+                rtlToggle.innerHTML = '<i class="fas fa-globe"></i>';
                 rtlToggle.title = 'Switch to Left-to-Right';
             } else {
                 rtlToggle.style.background = 'var(--primary-100)';
                 rtlToggle.style.color = 'var(--primary-600)';
-                icon.className = 'fas fa-language';
-                rtlToggle.innerHTML = '<i class="fas fa-language"></i> RTL';
+                rtlToggle.innerHTML = '<i class="fas fa-globe"></i>';
                 rtlToggle.title = 'Switch to Right-to-Left';
             }
         }
@@ -85,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 [dir="rtl"] .hero-buttons,
-                [dir="rtl"] .hero-actions,
                 [dir="rtl"] .cta-buttons {
                     flex-direction: row-reverse;
                 }
