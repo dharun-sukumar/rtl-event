@@ -1,398 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Dashboard - TechConf 2025</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-   <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html" style="text-decoration: none;">
-                <h2>TechConf <span>2025</span></h2>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Home <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html" class="nav-link" id="home1">Home 1</a></li>
-                        <li><a href="index2.html" class="nav-link" id="home2">Home 2</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="event-details.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
-                                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="homeDropdown">Dashboard <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                <li class="nav-item"><a href="admin-dashboard.html" class="nav-link">Admin</a></li>
-                <li class="nav-item"><a href="user-dashboard.html" class="nav-link">User</a></li>
-                    </ul>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html" style="text-decoration: none">
+            <h2>TechConf <span>2025</span></h2>
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="homeDropdown"
+              >Home <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html" class="nav-link" id="home1">Home 1</a>
+              </li>
+              <li>
+                <a href="index2.html" class="nav-link" id="home2">Home 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="event-details.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="schedule.html" class="nav-link">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="register.html" class="nav-link">Register</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="homeDropdown"
+              >Dashboard <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+                <li class="nav-item">
+                    <a href="admin-dashboard.html" class="nav-link">Admin</a>
                 </li>
                 <li class="nav-item">
-                    <button class="rtl-toggle" id="rtlToggle">
-                        <i class="fas fa-globe"></i>
-                    </button>
+                    <a href="user-dashboard.html" class="nav-link">User</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <li class="nav-item" style="border: 2px solid #3b82f6; border-radius: 4px; padding: 2px 6px;">
+              <a href="login.html" class="nav-link">Logout</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <button class="rtl-toggle" id="rtlToggle">
+              <i class="fas fa-globe"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+      </div>
     </nav>
 
     <main class="dashboard-main">
-        <div class="dashboard-container">
-            <aside class="dashboard-sidebar">
-                <div class="sidebar-header">
-                    <div class="user-info">
-                        <div class="user-avatar">
-                            <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=100" alt="User Avatar">
-                        </div>
-                        <div class="user-details">
-                            <h3>Sarah Johnson</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-                <nav class="sidebar-nav">
-                    <a href="#dashboard" class="sidebar-link active">
-                        <i class="fas fa-tachometer-alt"></i>
-                        Dashboard
-                    </a>
-                    <a href="#schedule" class="sidebar-link">
-                        <i class="fas fa-calendar-alt"></i>
-                        My Schedule
-                    </a>
-                    <a href="#networking" class="sidebar-link">
-                        <i class="fas fa-users"></i>
-                        Networking
-                    </a>
-                    <a href="#resources" class="sidebar-link">
-                        <i class="fas fa-download"></i>
-                        Resources
-                    </a>
-                    <a href="#profile" class="sidebar-link">
-                        <i class="fas fa-user"></i>
-                        Profile
-                    </a>
-                    <a href="#settings" class="sidebar-link">
-                        <i class="fas fa-cog"></i>
-                        Settings
-                    </a>
-                </nav>
-                <div class="sidebar-footer">
-                    <a href="login.html" class="logout-link">
-                        <i class="fas fa-sign-out-alt"></i>
-                        Logout
-                    </a>
-                </div>
-            </aside>
-
-            <div class="dashboard-content">
-                <div class="dashboard-header">
-                    <div class="header-info">
-                        <h1>Welcome back, Sarah!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.</p>
-                    </div>
-                    <div class="header-actions">
-                        <button class="btn btn-outline">
-                            <i class="fas fa-qrcode"></i>
-                            My QR Code
-                        </button>
-                        <button class="btn btn-primary">
-                            <i class="fas fa-calendar-plus"></i>
-                            Add to Calendar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="user-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon primary">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>12</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon success">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>24</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon warning">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>65</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon error">
-                            <i class="fas fa-download"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>8</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dashboard-grid">
-                    <div class="dashboard-card">
-                        <div class="card-header">
-                            <h3>My Schedule</h3>
-                            <a href="schedule.html" class="btn btn-sm btn-outline">View Full Schedule</a>
-                        </div>
-                        <div class="card-content">
-                            <div class="schedule-preview">
-                                <div class="schedule-item">
-                                    <div class="schedule-time">09:00 AM</div>
-                                    <div class="schedule-details">
-                                        <h4>Opening Keynote: The Future of AI</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="schedule-location">Main Auditorium</span>
-                                    </div>
-                                    <div class="schedule-actions">
-                                        <button class="btn btn-sm btn-outline">
-                                            <i class="fas fa-bell"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="schedule-item">
-                                    <div class="schedule-time">10:30 AM</div>
-                                    <div class="schedule-details">
-                                        <h4>Machine Learning in Production</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="schedule-location">Room A</span>
-                                    </div>
-                                    <div class="schedule-actions">
-                                        <button class="btn btn-sm btn-outline active">
-                                            <i class="fas fa-bookmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="schedule-item">
-                                    <div class="schedule-time">01:30 PM</div>
-                                    <div class="schedule-details">
-                                        <h4>Hands-on AI Workshop</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="schedule-location">Workshop Room 1</span>
-                                    </div>
-                                    <div class="schedule-actions">
-                                        <button class="btn btn-sm btn-outline active">
-                                            <i class="fas fa-bookmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dashboard-card">
-                        <div class="card-header">
-                            <h3>Recommended Sessions</h3>
-                            <span class="card-subtitle">Based on your interests</span>
-                        </div>
-                        <div class="card-content">
-                            <div class="recommendations">
-                                <div class="recommendation-item">
-                                    <div class="recommendation-icon">
-                                        <i class="fas fa-brain"></i>
-                                    </div>
-                                    <div class="recommendation-info">
-                                        <h4>Computer Vision Applications</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="recommendation-match">95% match</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-primary">Add</button>
-                                </div>
-                                <div class="recommendation-item">
-                                    <div class="recommendation-icon">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
-                                    <div class="recommendation-info">
-                                        <h4>Zero Trust Security</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="recommendation-match">87% match</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-primary">Add</button>
-                                </div>
-                                <div class="recommendation-item">
-                                    <div class="recommendation-icon">
-                                        <i class="fas fa-cubes"></i>
-                                    </div>
-                                    <div class="recommendation-info">
-                                        <h4>DeFi Development Workshop</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="recommendation-match">82% match</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-primary">Add</button>
-                                </div>
-                                <div class="recommendation-item">
-                                    <div class="recommendation-icon">
-                                        <i class="fas fa-cubes"></i>
-                                    </div>
-                                    <div class="recommendation-info">
-                                        <h4>DeFi Development Workshop</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="recommendation-match">82% match</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-primary">Add</button>
-                                </div>
-                                <div class="recommendation-item">
-                                    <div class="recommendation-icon">
-                                        <i class="fas fa-cubes"></i>
-                                    </div>
-                                    <div class="recommendation-info">
-                                        <h4>DeFi Development Workshop</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="recommendation-match">82% match</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-primary">Add</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dashboard-card">
-                        <div class="card-header">
-                            <h3>Networking Opportunities</h3>
-                            <button class="btn btn-sm btn-outline">View All</button>
-                        </div>
-                        <div class="card-content">
-                            <div class="networking-list">
-                                <div class="networking-item">
-                                    <div class="networking-avatar">
-                                        <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Marcus Johnson">
-                                    </div>
-                                    <div class="networking-info">
-                                        <h4>Marcus Johnson</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="networking-interests">Cloud Computing, DevOps</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-outline">Connect</button>
-                                </div>
-                                <div class="networking-item">
-                                    <div class="networking-avatar">
-                                        <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Elena Rodriguez">
-                                    </div>
-                                    <div class="networking-info">
-                                        <h4>Elena Rodriguez</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="networking-interests">Blockchain, Web3</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-primary">Connected</button>
-                                </div>
-                                <div class="networking-item">
-                                    <div class="networking-avatar">
-                                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Alex Chen">
-                                    </div>
-                                    <div class="networking-info">
-                                        <h4>Alex Chen</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="networking-interests">AI, Machine Learning</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-outline">Connect</button>
-                                </div>
-                                <div class="networking-item">
-                                    <div class="networking-avatar">
-                                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Alex Chen">
-                                    </div>
-                                    <div class="networking-info">
-                                        <h4>Alex Chen</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="networking-interests">AI, Machine Learning</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-outline">Connect</button>
-                                </div>
-                                <div class="networking-item">
-                                    <div class="networking-avatar">
-                                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Alex Chen">
-                                    </div>
-                                    <div class="networking-info">
-                                        <h4>Alex Chen</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="networking-interests">AI, Machine Learning</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-outline">Connect</button>
-                                </div>
-                                <div class="networking-item">
-                                    <div class="networking-avatar">
-                                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Alex Chen">
-                                    </div>
-                                    <div class="networking-info">
-                                        <h4>Alex Chen</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <span class="networking-interests">AI, Machine Learning</span>
-                                    </div>
-                                    <button class="btn btn-sm btn-outline">Connect</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dashboard-card">
-                        <div class="card-header">
-                            <h3>Event Updates</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="updates-list">
-                                <div class="update-item">
-                                    <div class="update-icon">
-                                        <i class="fas fa-info-circle"></i>
-                                    </div>
-                                    <div class="update-info">
-                                        <h4>Schedule Update</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="update-time">2 hours ago</span>
-                                    </div>
-                                </div>
-                                <div class="update-item">
-                                    <div class="update-icon">
-                                        <i class="fas fa-user-plus"></i>
-                                    </div>
-                                    <div class="update-info">
-                                        <h4>New Speaker</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="update-time">1 day ago</span>
-                                    </div>
-                                </div>
-                                <div class="update-item">
-                                    <div class="update-icon">
-                                        <i class="fas fa-gift"></i>
-                                    </div>
-                                    <div class="update-info">
-                                        <h4>Exclusive Offer</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus.</p>
-                                        <span class="update-time">3 days ago</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+          <div class="sidebar-header">
+            <div class="user-info">
+              <div class="user-avatar">
+                <img
+                  src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=100"
+                  alt="User Avatar"
+                />
+              </div>
+              <div class="user-details">
+                <h3>Sarah Johnson</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
+          </div>
+          <nav class="sidebar-nav">
+            <a href="#dashboard" class="sidebar-link active">
+              <i class="fas fa-tachometer-alt"></i>
+              Dashboard
+            </a>
+            <a href="#schedule" class="sidebar-link">
+              <i class="fas fa-calendar-alt"></i>
+              My Schedule
+            </a>
+            <a href="#networking" class="sidebar-link">
+              <i class="fas fa-users"></i>
+              Networking
+            </a>
+            <a href="#resources" class="sidebar-link">
+              <i class="fas fa-download"></i>
+              Resources
+            </a>
+            <a href="#profile" class="sidebar-link">
+              <i class="fas fa-user"></i>
+              Profile
+            </a>
+            <a href="#settings" class="sidebar-link">
+              <i class="fas fa-cog"></i>
+              Settings
+            </a>
+          </nav>
+        </aside>
+
+        <div class="dashboard-content">
+          <div class="dashboard-header">
+            <div class="header-info">
+              <h1>Welcome back, Sarah!</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus.
+              </p>
+            </div>
+            <div class="header-actions">
+              <button class="btn btn-outline">
+                <i class="fas fa-qrcode"></i>
+                My QR Code
+              </button>
+              <button class="btn btn-primary">
+                <i class="fas fa-calendar-plus"></i>
+                Add to Calendar
+              </button>
+            </div>
+          </div>
+
+          <div class="user-stats">
+            <div class="stat-card">
+              <div class="stat-icon primary">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="stat-info">
+                <h3>12</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon success">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-info">
+                <h3>24</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon warning">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="stat-info">
+                <h3>65</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon error">
+                <i class="fas fa-download"></i>
+              </div>
+              <div class="stat-info">
+                <h3>8</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h3>My Schedule</h3>
+                <a href="schedule.html" class="btn btn-sm btn-outline"
+                  >View Full Schedule</a
+                >
+              </div>
+              <div class="card-content">
+                <div class="schedule-preview">
+                  <div class="schedule-item">
+                    <div class="schedule-time">09:00 AM</div>
+                    <div class="schedule-details">
+                      <h4>Opening Keynote: The Future of AI</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="schedule-location">Main Auditorium</span>
+                    </div>
+                    <div class="schedule-actions">
+                      <button class="btn btn-sm btn-outline">
+                        <i class="fas fa-bell"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="schedule-time">10:30 AM</div>
+                    <div class="schedule-details">
+                      <h4>Machine Learning in Production</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="schedule-location">Room A</span>
+                    </div>
+                    <div class="schedule-actions">
+                      <button class="btn btn-sm btn-outline active">
+                        <i class="fas fa-bookmark"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="schedule-item">
+                    <div class="schedule-time">01:30 PM</div>
+                    <div class="schedule-details">
+                      <h4>Hands-on AI Workshop</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="schedule-location">Workshop Room 1</span>
+                    </div>
+                    <div class="schedule-actions">
+                      <button class="btn btn-sm btn-outline active">
+                        <i class="fas fa-bookmark"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h3>Recommended Sessions</h3>
+                <span class="card-subtitle">Based on your interests</span>
+              </div>
+              <div class="card-content">
+                <div class="recommendations">
+                  <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                      <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="recommendation-info">
+                      <h4>Computer Vision Applications</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque habitant morbi tristique senectus.
+                      </p>
+                      <span class="recommendation-match">95% match</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary">Add</button>
+                  </div>
+                  <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                      <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="recommendation-info">
+                      <h4>Zero Trust Security</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque habitant morbi tristique senectus.
+                      </p>
+                      <span class="recommendation-match">87% match</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary">Add</button>
+                  </div>
+                  <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                      <i class="fas fa-cubes"></i>
+                    </div>
+                    <div class="recommendation-info">
+                      <h4>DeFi Development Workshop</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque habitant morbi tristique senectus.
+                      </p>
+                      <span class="recommendation-match">82% match</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary">Add</button>
+                  </div>
+                  <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                      <i class="fas fa-cubes"></i>
+                    </div>
+                    <div class="recommendation-info">
+                      <h4>DeFi Development Workshop</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque habitant morbi tristique senectus.
+                      </p>
+                      <span class="recommendation-match">82% match</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary">Add</button>
+                  </div>
+                  <div class="recommendation-item">
+                    <div class="recommendation-icon">
+                      <i class="fas fa-cubes"></i>
+                    </div>
+                    <div class="recommendation-info">
+                      <h4>DeFi Development Workshop</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque habitant morbi tristique senectus.
+                      </p>
+                      <span class="recommendation-match">82% match</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h3>Networking Opportunities</h3>
+                <button class="btn btn-sm btn-outline">View All</button>
+              </div>
+              <div class="card-content">
+                <div class="networking-list">
+                  <div class="networking-item">
+                    <div class="networking-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=60"
+                        alt="Marcus Johnson"
+                      />
+                    </div>
+                    <div class="networking-info">
+                      <h4>Marcus Johnson</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="networking-interests"
+                        >Cloud Computing, DevOps</span
+                      >
+                    </div>
+                    <button class="btn btn-sm btn-outline">Connect</button>
+                  </div>
+                  <div class="networking-item">
+                    <div class="networking-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=60"
+                        alt="Elena Rodriguez"
+                      />
+                    </div>
+                    <div class="networking-info">
+                      <h4>Elena Rodriguez</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="networking-interests">Blockchain, Web3</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary">Connected</button>
+                  </div>
+                  <div class="networking-item">
+                    <div class="networking-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60"
+                        alt="Alex Chen"
+                      />
+                    </div>
+                    <div class="networking-info">
+                      <h4>Alex Chen</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="networking-interests"
+                        >AI, Machine Learning</span
+                      >
+                    </div>
+                    <button class="btn btn-sm btn-outline">Connect</button>
+                  </div>
+                  <div class="networking-item">
+                    <div class="networking-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60"
+                        alt="Alex Chen"
+                      />
+                    </div>
+                    <div class="networking-info">
+                      <h4>Alex Chen</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="networking-interests"
+                        >AI, Machine Learning</span
+                      >
+                    </div>
+                    <button class="btn btn-sm btn-outline">Connect</button>
+                  </div>
+                  <div class="networking-item">
+                    <div class="networking-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60"
+                        alt="Alex Chen"
+                      />
+                    </div>
+                    <div class="networking-info">
+                      <h4>Alex Chen</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="networking-interests"
+                        >AI, Machine Learning</span
+                      >
+                    </div>
+                    <button class="btn btn-sm btn-outline">Connect</button>
+                  </div>
+                  <div class="networking-item">
+                    <div class="networking-avatar">
+                      <img
+                        src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=60"
+                        alt="Alex Chen"
+                      />
+                    </div>
+                    <div class="networking-info">
+                      <h4>Alex Chen</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <span class="networking-interests"
+                        >AI, Machine Learning</span
+                      >
+                    </div>
+                    <button class="btn btn-sm btn-outline">Connect</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <script src="main.js"></script>
     <script src="rtl-toggle.js"></script>
-</body>
+  </body>
 </html>
