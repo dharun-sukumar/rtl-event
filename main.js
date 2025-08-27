@@ -351,5 +351,38 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
+    // FAQ dropdown expand/collapse (only one open at a time)
+    setTimeout(function() {
+        var faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                // Collapse all answers first
+                faqQuestions.forEach(function(otherBtn) {
+                    if (otherBtn !== btn) {
+                        otherBtn.setAttribute('aria-expanded', false);
+                        if (otherBtn.nextElementSibling) {
+                            otherBtn.nextElementSibling.style.display = 'none';
+                        }
+                        var arrow = otherBtn.querySelector('.faq-arrow');
+                        if (arrow) arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+                // Toggle current answer
+                var answer = btn.nextElementSibling;
+                var expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', !expanded);
+                if (!expanded) {
+                    if (answer) answer.style.display = 'block';
+                    var arrow = btn.querySelector('.faq-arrow');
+                    if (arrow) arrow.style.transform = 'rotate(180deg)';
+                } else {
+                    if (answer) answer.style.display = 'none';
+                    var arrow = btn.querySelector('.faq-arrow');
+                    if (arrow) arrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    }, 0);
+
     console.log('TechConf 2025 - All systems ready! 🚀');
 });
